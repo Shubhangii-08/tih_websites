@@ -1,4 +1,4 @@
-import Header from '@/compoents/header';
+import Header from '@/components/header';
 import Slider from '../components/Slider';
 // import AboutSection from '../components/AboutSection';
 // import WhatsNew from '../components/WhatsNew';

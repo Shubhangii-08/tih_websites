@@ -8,10 +8,11 @@ const Footer = () => {
         {/* Address */}
         <div>
           <Image
-            src="/images/tih_logo_1.png" // Replace with your actual logo path
+            src="/image/tih_website_logo.jpg"
             alt="iHub Drishti Logo"
-            width={150} // Adjust as needed
-            height={50} // Adjust as needed
+            width={150}
+            height={50}
+            priority
           />
           <ul className="mt-4 text-gray-700">
             <li>
@@ -45,7 +46,21 @@ const Footer = () => {
                 Jobs
               </Link>
             </li>
-            {/* Add more links */}
+            <li>
+              <Link href="/forms" className="text-gray-700 hover:text-blue-500">
+                Forms
+              </Link>
+            </li>
+            <li>
+              <Link href="/newsletter" className="text-gray-700 hover:text-blue-500">
+                Newsletter
+              </Link>
+            </li>
+            <li>
+              <Link href="/consultancy-services" className="text-gray-700 hover:text-blue-500">
+                Consultancy Services
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -58,12 +73,13 @@ const Footer = () => {
 
         {/* NM-ICPS Logo */}
         <div>
-          <a href="https://nmicps.in/" target="_blank">
+          <a href="https://nmicps.in/" target="_blank" rel="noopener noreferrer">
             <Image
-              src="/images/nmicp2.png" // Replace with your actual logo path
+              src="/image/nmicp2.png"
               alt="NM-ICPS"
-              width={150} // Adjust as needed
-              height={50} // Adjust as needed
+              width={150}
+              height={50}
+              priority
             />
           </a>
         </div>
