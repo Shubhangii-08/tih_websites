@@ -1,25 +1,15 @@
-import Header from '@/components/header';
-import Slider from '../components/Slider';
-// import AboutSection from '../components/AboutSection';
-// import WhatsNew from '../components/WhatsNew';
-// import FeaturesSection from '../components/FeaturesSection';
-// import VerticalsSection from '../components/VerticalsSection';
-// import PartnerSection from '../components/PartnerSection';
-import Footer from '../components/Footer';
-
+import Header from '@/components/header'
+import Footer from '@/components/Footer'
+import Image from 'next/image'
+import Slider from '@/components/Slider'
+import WorkCarousel from '@/components/WorkCarousel'
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
       <Slider />
-      {/* <AboutSection />
-      <WhatsNew />
-      <FeaturesSection />
-      <VerticalsSection />
-      <PartnerSection /> */}
+      <WorkCarousel />
       <Footer />
-    </>
-  );
+    </div>
+  )
 }
-
-

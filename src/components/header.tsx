@@ -30,8 +30,8 @@ const Header = () => {
                   priority
                 />
               </a>
-            </div>
-            <ul className="flex space-x-8">
+            </div >
+            <ul className="flex space-x-12">
               <li>
                 <a href="https://www.facebook.com/IHub-Drishti-107489811622386" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
