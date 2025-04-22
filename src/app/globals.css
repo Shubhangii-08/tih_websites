@@ -119,3 +119,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Add these styles */
+canvas {
+  touch-action: none;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
