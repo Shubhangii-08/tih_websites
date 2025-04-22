@@ -1,10 +1,10 @@
 'use client';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 const works = [
   {
@@ -62,7 +62,11 @@ const WorkCarousel = () => {
             slidesPerView="auto"
             spaceBetween={30}
             pagination={{ clickable: true }}
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
             className="queppelin-swiper"
             breakpoints={{
               320: {
@@ -99,39 +103,32 @@ const WorkCarousel = () => {
           </Swiper>
         </div>
       </div>
-
       <style jsx global>{`
         .queppelin-swiper {
           padding: 20px 0;
         }
-
         .queppelin-slide {
           width: 300px;
           height: 400px;
         }
-
         .swiper-pagination {
           bottom: 0 !important;
         }
-
         .swiper-pagination-bullet {
           width: 8px;
           height: 8px;
           background: #000;
           opacity: 0.2;
         }
-
         .swiper-pagination-bullet-active {
           opacity: 1;
           background: #000;
         }
-
         @media (min-width: 768px) {
           .queppelin-slide {
             width: 350px;
           }
         }
-
         @media (min-width: 1024px) {
           .queppelin-slide {
             width: 400px;
@@ -142,4 +139,4 @@ const WorkCarousel = () => {
   );
 };
 
-export default WorkCarousel; 
+export default WorkCarousel;
