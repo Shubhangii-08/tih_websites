@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+'use client';
+import React, { useState } from 'react';
+>>>>>>> 3755027 (Initial commit)
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Header = () => {
+<<<<<<< HEAD
   return (
     <header className="bg-white">
       {/* Top Header Bar */}
@@ -15,22 +21,53 @@ const Header = () => {
                 alt="iHub Drishti Logo"
                 width={150}
                 height={50}
+=======
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <header className="bg-white w-full">
+      {/* Top Header Bar */}
+      <div className="bg-gray-100 py-2">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
+          <div className="flex items-center mb-4 sm:mb-0">
+            <Link href="/" className="block">
+              <Image
+                src="/image/tih_website_logo.jpg" 
+                alt="iHub Drishti Logo"
+                width={120}
+                height={40}
+                className="w-auto h-auto"
+>>>>>>> 3755027 (Initial commit)
                 priority
               />
             </Link>
           </div>
           <div className="flex items-center">
+<<<<<<< HEAD
             <div className="mr-16">
+=======
+            <div className="mr-4 sm:mr-16">
+>>>>>>> 3755027 (Initial commit)
               <a href="https://dst.gov.in/" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/image/dst_logo.jpg"
                   alt="DST"
+<<<<<<< HEAD
                   width={350}
                   height={150}
                   priority
                 />
               </a>
             </div >
+=======
+                  width={280}
+                  height={120}
+                  className="w-auto h-auto max-h-[60px]"
+                  priority
+                />
+              </a>
+            </div>
+>>>>>>> 3755027 (Initial commit)
             <ul className="flex space-x-12">
               <li>
                 <a href="https://www.facebook.com/IHub-Drishti-107489811622386" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
@@ -65,6 +102,7 @@ const Header = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       {/* Navigation Menu */}
       <div className="bg-primary text-white py-3">
         <div className="container mx-auto">
@@ -81,6 +119,41 @@ const Header = () => {
               <li><Link href="/call-for-proposal" className="hover:text-gray-200">Call for Proposal</Link></li>
               <li><Link href="/training" className="hover:text-gray-200">Training</Link></li>
               <li><Link href="/contact" className="hover:text-gray-200">Contact</Link></li>
+=======
+      {/* Navigation Bar */}
+      <div className="bg-primary text-white py-3 relative">
+        <div className="container mx-auto px-4">
+          {/* Mobile Menu Button */}
+          <button 
+            className="lg:hidden w-full flex items-center justify-between px-4 py-2 text-white"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <span>Menu</span>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              />
+            </svg>
+          </button>
+
+          {/* Navigation Links */}
+          <nav className={`${isMenuOpen ? 'block' : 'hidden'} lg:block`}>
+            <ul className="flex flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0">
+              <li><Link href="/" className="block hover:text-gray-200 py-2 lg:py-0">Home</Link></li>
+              <li><Link href="/about" className="block hover:text-gray-200 py-2 lg:py-0">About Us</Link></li>
+              <li><Link href="/administration" className="block hover:text-gray-200 py-2 lg:py-0">Administration</Link></li>
+              <li><Link href="/r-and-d-labs" className="block hover:text-gray-200 py-2 lg:py-0">R & D Labs</Link></li>
+              <li><Link href="/entrepreneurship" className="block hover:text-gray-200 py-2 lg:py-0">Entrepreneurship</Link></li>
+              <li><Link href="/projects" className="block hover:text-gray-200 py-2 lg:py-0">Projects</Link></li>
+              <li><Link href="/products-and-services" className="block hover:text-gray-200 py-2 lg:py-0">Product & Services</Link></li>
+              <li><Link href="/jobs" className="block hover:text-gray-200 py-2 lg:py-0">Jobs</Link></li>
+              <li><Link href="/call-for-proposal" className="block hover:text-gray-200 py-2 lg:py-0">Call for Proposal</Link></li>
+              <li><Link href="/training" className="block hover:text-gray-200 py-2 lg:py-0">Training</Link></li>
+              <li><Link href="/contact" className="block hover:text-gray-200 py-2 lg:py-0">Contact</Link></li>
+>>>>>>> 3755027 (Initial commit)
             </ul>
           </nav>
         </div>

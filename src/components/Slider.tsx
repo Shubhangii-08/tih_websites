@@ -59,12 +59,21 @@ const Slider = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="bg-black min-h-screen flex items-center justify-center overflow-hidden p-4 sm:p-8">
       {/* Background effects */}
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 via-purple-900/20 to-fuchsia-900/20"></div>
         <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-96 sm:h-96 bg-violet-500/10 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-96 sm:h-96 bg-fuchsia-500/10 rounded-full filter blur-3xl"></div>
+=======
+    <div className="bg-black min-h-screen flex items-center justify-center overflow-hidden p-2 sm:p-4">
+      {/* Background effects */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-900/10 via-purple-900/10 to-fuchsia-900/10"></div>
+        <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-72 sm:h-72 bg-violet-500/5 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-72 sm:h-72 bg-fuchsia-500/5 rounded-full filter blur-3xl"></div>
+>>>>>>> 3755027 (Initial commit)
       </div>
 
       {/* Main container */}
@@ -89,7 +98,11 @@ const Slider = () => {
           </button>
 
           {/* Carousel track */}
+<<<<<<< HEAD
           <div className="carousel-track relative h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden">
+=======
+          <div className="carousel-track relative h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden">
+>>>>>>> 3755027 (Initial commit)
             {slides.map((slide, index) => {
               const position = (index - currentSlide + slides.length) % slides.length;
               let className = 'carousel-item absolute top-0 left-0 w-full h-full';
@@ -106,8 +119,13 @@ const Slider = () => {
 
               return (
                 <div key={index} className={className}>
+<<<<<<< HEAD
                   <div className="w-full h-full p-4 sm:p-8">
                     <div className="w-full h-full rounded-xl sm:rounded-2xl overflow-hidden relative group">
+=======
+                  <div className="w-full h-full p-2 sm:p-4">
+                    <div className="w-full h-full rounded-lg sm:rounded-xl overflow-hidden relative group">
+>>>>>>> 3755027 (Initial commit)
                       <Image
                         src={slide.image}
                         alt={slide.title}
